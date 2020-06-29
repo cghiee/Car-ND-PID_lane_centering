@@ -1,6 +1,15 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+Clark Hochgraf
+June 29, 2020
+
+# demo video for Proportional only control (unstable)
+https://youtu.be/fOUSFPqexw8
+
+# demo video for PID control (stable)
+https://youtu.be/k12j5m8tlBc
+
 ---
 
 ## Dependencies
