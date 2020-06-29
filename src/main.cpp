@@ -52,8 +52,10 @@ int main(int argc, char *argv[]) {
 
 
  WORKING PARAMETERS
-  ./pid -0.225 0 -10
-
+  used for video:
+    ./pid -0.225 -.0001 -1000
+  Other acceptable parameters:
+    ./pid -0.225 0 -10
 
   ****/
 
