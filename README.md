@@ -10,7 +10,7 @@ https://youtu.be/fOUSFPqexw8
 # Demo video for PID control (stable)
 https://youtu.be/k12j5m8tlBc
 
-** Performance of Control Loop **
+# Graph Showing Performance of Control Loop **
 
 ![](Speed-SteeringAngle-CrossTrackError.png)
 
