@@ -51,7 +51,7 @@ The final PID parameters were:
 |----------------|----------|
 | P              | -0.225   |
 | I              | -0.0001  |
-| D              | -1000    |
+| D              | -5   |
 
 # Simulation
 

@@ -89,10 +89,10 @@ int main(int argc, char *argv[]) {
            *   Maybe use another PID controller to control the speed!
            */
 
-          pid.UpdateError(cte);
+          pid.UpdateErrorTerms(cte);
          
 
-          steer_value=pid.TotalError(speed);
+          steer_value=pid.OutputToActuator(speed);
           //steer_value=-cte;
           // limit steering angle
           double limit=0.75;
