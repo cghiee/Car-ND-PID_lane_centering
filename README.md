@@ -21,10 +21,7 @@ PID Controller
 
 # Compilation
 
-CRITERIA
-MEETS SPECIFICATIONS
-
-Your code should compile.
+CRITERIA: MEETS SPECIFICATIONS: Your code should compile.
 
 :white_check_mark: Code must compile without errors with cmake and make.
 
