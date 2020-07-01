@@ -47,9 +47,11 @@ Tuning of the PID parameters was done manually and sequentially:
   - finally a low value of integral gain was added to remove systematic errors
 
 The final PID parameters were:
- P gain: -0.225 
- I gain: -.0001 
- D gain: -1000
+| Gain Term      | Value    |
+|----------------|----------|
+| P gain         | -0.225   |
+| I gain         | -0.0001  |
+| D gain         | -1000    |
 
 # Simulation
 
