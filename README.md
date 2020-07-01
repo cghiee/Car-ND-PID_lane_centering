@@ -10,6 +10,10 @@ https://youtu.be/fOUSFPqexw8
 # demo video for PID control (stable)
 https://youtu.be/k12j5m8tlBc
 
+** Performance of Control Loop **
+
+![](Speed-SteeringAngle-CrossTrackError.png)
+
 
 # PROJECT SPECIFICATION
 PID Controller
@@ -42,10 +46,6 @@ Describe the effect each of the P, I, D components had in your implementation.
 Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
 
 Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
-
-** Performance of Control Loop **
-
-![](Speed-SteeringAngle-CrossTrackError.png)
 
 Describe how the final hyperparameters were chosen.
 
