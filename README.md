@@ -4,10 +4,10 @@ Self-Driving Car Engineer Nanodegree Program
 Clark Hochgraf
 June 29, 2020
 
-# demo video for Proportional only control (unstable)
+# Demo video for Proportional only control (unstable)
 https://youtu.be/fOUSFPqexw8
 
-# demo video for PID control (stable)
+# Demo video for PID control (stable)
 https://youtu.be/k12j5m8tlBc
 
 ** Performance of Control Loop **
@@ -15,15 +15,14 @@ https://youtu.be/k12j5m8tlBc
 ![](Speed-SteeringAngle-CrossTrackError.png)
 
 
-# PROJECT SPECIFICATION
-PID Controller
+# PROJECT SPECIFICATION: PID Controller
 
 
 # Compilation
 
 CRITERIA: MEETS SPECIFICATIONS: Your code should compile.
 
-:white_check_mark: Code must compile without errors with cmake and make.
+:white_check_mark: Code compiles without errors with cmake and make.
 
 # Implementation
 
@@ -35,7 +34,7 @@ CRITERIA MEETS SPECIFICATIONS: The PID procedure follows what was taught in the 
 
 CRITERIA:  MEETS SPECIFICATIONS: Describe the effect each of the P, I, D components had in your implementation.
 
-:white_check_mark:  The proportional gain P does most of the work in creating the steering angle that brings the vehicle back to the center of the lane. The derivative gain D is essential in stabilizing the response of the steering. If the D gain is too low, the vehicle will oscillate around the center of the lane with increasing amplitude of oscillation, eventually leaving the road surface. With too high of a derivative gain, the controller actuator effort grows very large due to a noise derivative signal. The I gain plays a smaller role in the control, correcting for long term errors in the steering angle e.g. due to a course that is consistently circling left or right. The behavior of each term P, I, and D are as expected.
+:white_check_mark:  The proportional gain P does most of the work in creating the steering angle that brings the vehicle back to the center of the lane. The derivative gain D is essential in stabilizing the response of the steering. If the D gain is too low, the vehicle will oscillate around the center of the lane with increasing amplitude of oscillation, eventually leaving the road surface. With too high of a derivative gain, the controller actuator effort grows very large due to noise in the derivative signal. The I gain plays a smaller role in the control, correcting for long term errors in the steering angle e.g. due to a course that is consistently circling left or right. The behavior of each term P, I, and D is as expected.
 
 :white_check_mark: A video of the performance of the vehicle is given above. Also included is a plot of the cross track error, vehicle speed, and controller steering effort for one lap around the track.  
 
