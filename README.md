@@ -28,7 +28,7 @@ CRITERIA: Your code should compile.
 
 CRITERIA:  The PID procedure follows what was taught in the lessons.
 
-:white_check_mark: MEETS SPECIFICATIONS: PID follows procedure from lessons.
+:white_check_mark: MEETS SPECIFICATIONS: PID follows procedure from lessons. See attached source code.
 
 # Reflection
 
