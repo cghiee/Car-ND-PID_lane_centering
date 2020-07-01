@@ -1,14 +1,14 @@
 #include "PID.h"
-#include <math.h>       /* used for power */
+#include <math.h>       
 
 
 /** 
  * Simple PID without integral anti-windup. 
  */
 
-PID::PID() {} /* Constructor */
+PID::PID() {} 
 
-PID::~PID() {} /* Destructor */
+PID::~PID() {} 
 
 void PID::Init(double Kp_, double Ki_, double Kd_) {
 
