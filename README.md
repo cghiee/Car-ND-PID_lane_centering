@@ -25,38 +25,33 @@ CRITERIA: MEETS SPECIFICATIONS: Your code should compile.
 
 :white_check_mark: Code must compile without errors with cmake and make.
 
-Given that we've made CMakeLists.txt as general as possible, it's recommend that you do not change it unless you can guarantee that your changes will still compile on any platform.
-
 # Implementation
 
-CRITERIA
-MEETS SPECIFICATIONS
+CRITERIA MEETS SPECIFICATIONS: The PID procedure follows what was taught in the lessons.
 
-:white_check_mark: The PID procedure follows what was taught in the lessons.
-
-It's encouraged to be creative, particularly around hyperparameter tuning/optimization. However, the base algorithm should follow what's presented in the lessons.
+:white_check_mark: PID follows procedure from lessons.
 
 # Reflection
 
-CRITERIA
-MEETS SPECIFICATIONS
-Describe the effect each of the P, I, D components had in your implementation.
+CRITERIA:  MEETS SPECIFICATIONS: Describe the effect each of the P, I, D components had in your implementation.
 
-:white_check_mark:  Student describes the effect of the P, I, D component of the PID algorithm in their implementation. Is it what you expected?
+:white_check_mark:  The proportional gain P does most of the work in creating the steering angle that brings the vehicle back to the center of the lane. The derivative gain D is essential in stabilizing the response of the steering. If the D gain is too low, the vehicle will oscillate around the center of the lane with increasing amplitude of oscillation, eventually leaving the road surface. With too high of a derivative gain, the controller actuator effort grows very large due to a noise derivative signal. The I gain plays a smaller role in the control, correcting for long term errors in the steering angle e.g. due to a course that is consistently circling left or right. The behavior of each term P, I, and D are as expected.
 
-:white_check_mark: Visual aids are encouraged, i.e. record of a small video of the car in the simulator and describe what each component is set to.
+:white_check_mark: A video of the performance of the vehicle is given above. Also included is a plot of the cross track error, vehicle speed, and controller steering effort for one lap around the track.  
 
-Describe how the final hyperparameters were chosen.
+:white_check_mark:  Describe how the final hyperparameters were chosen.
 
-:white_check_mark: Student discusses how they chose the final hyperparameters (P, I, D coefficients). This could be have been done through manual tuning, twiddle, SGD, or something else, or a combination!
+Tuning of the PID parameters was done manually and sequentially:
+  - proportional gain was tuned to achieve initial action from the control loop
+  - then derivative gain was added to stabilize the control loop, 
+  - then iterative tuning of P and D gains to improve performance
+  - finally a low value of integral gain was added to remove systematic errors
 
 # Simulation
 
-CRITERIA
-MEETS SPECIFICATIONS
-The vehicle must successfully drive a lap around the track.
+CRITERIA: MEETS SPECIFICATIONS: The vehicle must successfully drive a lap around the track.
 
-:white_check_mark:  No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle).
+:white_check_mark:  No tire leaves the drivable portion of the track surface. The car does not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle).
 
 
 ---
