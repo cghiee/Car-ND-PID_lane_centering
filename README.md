@@ -49,8 +49,8 @@ Tuning of the PID parameters was done manually and sequentially:
 The final PID parameters were:
 | Gain Term      | Value    |
 |----------------|----------|
-| P              | -0.225   |
-| I              | -0.0001  |
+| P              | -0.25   |
+| I              | -0.001  |
 | D              | -5   |
 
 # Simulation
